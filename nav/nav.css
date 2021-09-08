@@ -38,6 +38,7 @@ h1{
     list-style: none;
 }
 .blobcss{
+    border-radius: 10%;
     width:50px;
     height:50px;
     background-color: greenyellow;
@@ -47,10 +48,7 @@ h1{
     padding-left: 1rem;
 }
 .blobanimate{
-    width:50px;
-    height:50px;
-    background-color: greenyellow;
-    animation: blob 2s;
+    animation: blob 0.5s;
 }
 .nav-link{
     text-decoration: none;
@@ -66,9 +64,12 @@ h1{
 }
 @keyframes blob{
     from{
-        border-radius: 0%;
+        border-radius: 10%;
+    }
+    50%{
+        border-radius: 50%;
     }
     to{
-        border-radius: 40%;
+        border-radius: 10%;
     }
 }
