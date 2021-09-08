@@ -1,3 +1,74 @@
-p.banana{
-    color:pink;
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
+p{
+    font-size: 1rem;
+}
+h1{
+    font-size: 3rem;
+}
+.container{
+    width:100%;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar{
+    min-height: 3rem;
+    background-color: #363636;
+
+    font-size: 1.6rem;
+}
+.navbar-inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display:flex;
+    list-style: none;
+}
+.blobcss{
+    width:50px;
+    height:50px;
+    background-color: greenyellow;
+}
+
+.nav-item{
+    padding-left: 1rem;
+}
+.blobanimate{
+    width:50px;
+    height:50px;
+    background-color: greenyellow;
+    animation: blob 2s;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 24rem){
+    .navbar-inner, .nav{
+        flex-direction: column;
+    }
+}
+@keyframes blob{
+    from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 40%;
+    }
 }
