@@ -1,0 +1,46 @@
+.cta {
+    background-image: url("images/te19cta.jpg");
+    background-size: cover;
+    width:104.2%;
+    height:100%;
+    position: relative;
+    z-index: 1;
+    margin-left:-1rem;
+}
+.cta > h1{
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: gainsboro;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.cta-right > p{
+    color: gainsboro;
+    font-size: 2rem;
+}
+.cta-right{
+    text-align: right;
+}
+.cta-right > button{
+    font-size: 2rem;
+    padding: 0.4rem;
+    border:none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.cta-right > button:hover{
+    color: #dcdcdc;
+    background-color: #363636;
+}
+.cta-filter{
+    height:100%;
+    width:100%;
+    background-color: rgba(68, 68, 68, 0.4);
+    position:absolute;  
+    z-index: -1;
+    top:0;
+    left:0;
+}

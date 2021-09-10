@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav komponent</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../cta/cta.css">
+    <link rel="stylesheet" href="../card/card.css">
+
+
 </head>
 <body>
     <nav class="navbar">
@@ -19,8 +23,39 @@
             </div>
         </nav>
     <main class="container">
-        <h1>Main Content</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum distinctio expedita cupiditate perspiciatis a, assumenda ullam dolorum, ex nulla, tempora dignissimos ut quam quos nihil ea accusamus necessitatibus quas aliquam.</p>
+
+        <header class="cta">
+            <div class="cta-filter"></div>
+            <h1>This is TE19!</h1>
+            <div class="cta-right">
+            <p>TE19 is the best class ever.</p>
+            <p>Why don't you join us?</p>
+            <button onclick="window.location.href='../cta/cta.html'" class="ctabutton">Join TE19</button>
+        </div>
+        </header>
+        <div class="card-container">
+            <div class="card-item">
+                <h1>Rubrik</h1>
+                <p>Här är lite text som ska gå att läsa</p>
+                    <button>
+                        Knapp
+                    </button>
+            </div>
+            <div class="card-item">
+                <img src="//picsum.photos/299/200" alt="image">
+                <h1>Text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <button>
+                        Knapp
+                    </button>
+            </div>
+            <div class="card-item">
+                <img src="//picsum.photos/300/200" alt="image">
+
+                <h1>Namn</h1>
+                <p>text</p>
+            </div>
+        </div>
         <div id="blob" class="blobcss" onclick="blobclick()"></div>
         <p>klicka mig</p>
     </main>
@@ -34,7 +69,6 @@
         setTimeout(() => {
             document.getElementById("blob").classList.remove("blobanimate");
         }, 500);
-
     }
 </script>
 </html>
