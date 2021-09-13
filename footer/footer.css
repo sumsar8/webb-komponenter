@@ -1,0 +1,21 @@
+html, body{
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    width:100%;
+    background-color: gray;
+    margin-top: auto;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.footer-content{
+    display:flex;
+    flex-direction: row;
+}
+.footer-half{
+    width:50%;
+}
